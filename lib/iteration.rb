@@ -43,9 +43,9 @@ def total_even_pairs(src)
     row_index = 0
     sum = 0
   while row_index < src.count do
-    if new_array[row_index][0] % 2 == 0 && new_array[row_index][1] % 2 == 0
-      sum += new_array[row_index][0]
-      sum += new_array[row_index][1]
+    if src[row_index][0] % 2 == 0 && src[row_index][1] % 2 == 0
+      sum += src[row_index][0]
+      sum += src[row_index][1]
     end
     row_index += 1
   end
