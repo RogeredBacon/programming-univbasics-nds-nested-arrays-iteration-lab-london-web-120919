@@ -40,5 +40,12 @@ def total_even_pairs(src)
   # the number was even. Review the operator documentation if you've forgotten
   # this!
   
-  
+    row_index = 0
+  new_array = []
+  while row_index < src.count do
+   sorted_array = src[row_index].sort
+    new_array.push(sorted_array[-1])
+    row_index += 1
+  end
+  new_array
 end
